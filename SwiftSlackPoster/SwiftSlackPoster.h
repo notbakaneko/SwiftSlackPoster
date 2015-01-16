@@ -3,7 +3,6 @@
 //  SwiftSlackPoster
 //
 //  Created by bakaneko on 16/01/2015.
-//  Copyright (c) 2015 nekonyan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

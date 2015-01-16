@@ -10,6 +10,12 @@
 		EDEEBD181A68B8210054A9A1 /* SwiftSlackPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEEBD171A68B8210054A9A1 /* SwiftSlackPoster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDEEBD1E1A68B8210054A9A1 /* SwiftSlackPoster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEEBD121A68B8210054A9A1 /* SwiftSlackPoster.framework */; };
 		EDEEBD251A68B8210054A9A1 /* SwiftSlackPosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD241A68B8210054A9A1 /* SwiftSlackPosterTests.swift */; };
+		EDEEBD2F1A68B86C0054A9A1 /* SlackPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD2E1A68B86C0054A9A1 /* SlackPoster.swift */; };
+		EDEEBD301A68B86C0054A9A1 /* SlackPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD2E1A68B86C0054A9A1 /* SlackPoster.swift */; };
+		EDEEBD321A68B87F0054A9A1 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD311A68B87F0054A9A1 /* Attachment.swift */; };
+		EDEEBD331A68B87F0054A9A1 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD311A68B87F0054A9A1 /* Attachment.swift */; };
+		EDEEBD351A68B8860054A9A1 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD341A68B8860054A9A1 /* Field.swift */; };
+		EDEEBD361A68B8860054A9A1 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEEBD341A68B8860054A9A1 /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,9 @@
 		EDEEBD1D1A68B8210054A9A1 /* SwiftSlackPosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSlackPosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEEBD231A68B8210054A9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEEBD241A68B8210054A9A1 /* SwiftSlackPosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlackPosterTests.swift; sourceTree = "<group>"; };
+		EDEEBD2E1A68B86C0054A9A1 /* SlackPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackPoster.swift; sourceTree = "<group>"; };
+		EDEEBD311A68B87F0054A9A1 /* Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
+		EDEEBD341A68B8860054A9A1 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				EDEEBD171A68B8210054A9A1 /* SwiftSlackPoster.h */,
+				EDEEBD311A68B87F0054A9A1 /* Attachment.swift */,
+				EDEEBD341A68B8860054A9A1 /* Field.swift */,
+				EDEEBD2E1A68B86C0054A9A1 /* SlackPoster.swift */,
 				EDEEBD151A68B8210054A9A1 /* Supporting Files */,
 			);
 			path = SwiftSlackPoster;
@@ -159,7 +171,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = nekonyan;
+				ORGANIZATIONNAME = notbakaneko;
 				TargetAttributes = {
 					EDEEBD111A68B8210054A9A1 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -209,6 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEEBD321A68B87F0054A9A1 /* Attachment.swift in Sources */,
+				EDEEBD2F1A68B86C0054A9A1 /* SlackPoster.swift in Sources */,
+				EDEEBD351A68B8860054A9A1 /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEEBD251A68B8210054A9A1 /* SwiftSlackPosterTests.swift in Sources */,
+				EDEEBD331A68B87F0054A9A1 /* Attachment.swift in Sources */,
+				EDEEBD361A68B8860054A9A1 /* Field.swift in Sources */,
+				EDEEBD301A68B86C0054A9A1 /* SlackPoster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +337,7 @@
 		EDEEBD291A68B8210054A9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +347,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EDEEBD2A1A68B8210054A9A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
