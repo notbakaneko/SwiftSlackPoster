@@ -32,4 +32,18 @@ public struct Attachment {
 
         return dictionary
     }
+
+    public init(text: String? = nil, pretext: String? = nil, fallback: String, color: String, fields: [Field]) {
+        self.text = text
+        self.pretext = pretext
+        self.fallback = fallback
+        self.color = color
+        self.fields = fields
+    }
+
+    public init(fallback: String, color: String, fields: [Field]) {
+        self.fallback = fallback
+        self.color = color
+        self.fields = fields
+    }
 }
