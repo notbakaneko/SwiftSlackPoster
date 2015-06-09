@@ -21,7 +21,7 @@ public class SlackPoster {
         self.endpointURL = url
     }
 
-    func createField(#title: String, value: AnyObject?) -> [String:String] {
+    func createField(title title: String, value: AnyObject?) -> [String:String] {
         var field = [String:String]()
         field["title"] = title
         if let v: AnyObject = value {
@@ -43,11 +43,16 @@ public class SlackPoster {
 
         dictionary["attachments"] = attachments.map { $0.dictionary }
 
-        let payload = NSJSONSerialization.dataWithJSONObject(dictionary, options: NSJSONWritingOptions.allZeros, error: nil)
+        let payload: NSData?
+        do {
+            payload = try NSJSONSerialization.dataWithJSONObject(dictionary, options: NSJSONWritingOptions())
+        } catch _ {
+            payload = nil
+        }
         let request = NSMutableURLRequest(URL: endpointURL)
         request.HTTPMethod = "POST"
         request.HTTPBody = payload
 
-        session.dataTaskWithRequest(request).resume()
+        session.dataTaskWithRequest(request)?.resume()
     }
 }
